@@ -19,7 +19,7 @@ if( $Result==1 ){
   }
 }else {
   $_SESSION["ErrorMessage"]="Bad Request !!";
-  Redirect_to("Blog.php?page=1");
+  Redirect_to("Blog/index.php?page=1");
 }
 
 
@@ -30,50 +30,14 @@ if( $Result==1 ){
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="Css/Styles.css">
   <title>Profile</title>
 </head>
 <body>
   <!-- NAVBAR -->
-  <div style="height:10px; background:#27aae1;"></div>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a href="#" class="navbar-brand"> JAZEBAKRAM.COM</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapseCMS">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarcollapseCMS">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a href="Blog.php" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a href="Blog.php" class="nav-link">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Contact Us</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Features</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <form class="form-inline d-none d-sm-block" action="Blog.php">
-          <div class="form-group">
-          <input class="form-control mr-2" type="text" name="Search" placeholder="Search here"value="">
-          <button  class="btn btn-primary" name="SearchButton">Go</button>
-          </div>
-        </form>
-      </ul>
-      </div>
-    </div>
-  </nav>
-    <div style="height:10px; background:#27aae1;"></div>
+  <?php require_once("Blog/navbar.php"); ?>
     <!-- NAVBAR END -->
     <!-- HEADER -->
     <header class="bg-dark text-white py-3">
@@ -111,13 +75,13 @@ if( $Result==1 ){
       <div class="container">
         <div class="row">
           <div class="col">
-          <p class="lead text-center">Theme By | Jazeb Akram | <span id="year"></span> &copy; ----All right Reserved.</p>
-          <p class="text-center small"><a style="color: white; text-decoration: none; cursor: pointer;" href="http://jazebakram.com/coupons/" target="_blank"> This site is only used for Study purpose jazebakram.com have all the rights. no one is allow to distribute copies other then <br>&trade; jazebakram.com &trade;  Udemy ; &trade; Skillshare ; &trade; StackSkills</a></p>
-           </div>
+          <p class="lead text-center">MUSEN | <span id="year"></span> &copy; ----All right Reserved.</p>
+          <p class="text-center small"><a style="color: white; text-decoration: none; cursor: pointer;" href="http://MUSEN/" target="_blank"> This site is only used for Study purpose MUSEN have all the rights. no one is allow to distribute copies other then <br> MUSEN &trade; </a></p>
+          </div>
          </div>
       </div>
     </footer>
-        <div style="height:10px; background:#27aae1;"></div>
+        <!-- <div style="height:10px; background:#27aae1;"></div> -->
     <!-- FOOTER END-->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

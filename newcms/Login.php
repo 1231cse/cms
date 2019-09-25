@@ -47,28 +47,18 @@ if (isset($_POST["Submit"])) {
 </head>
 <body>
   <!-- NAVBAR -->
-  <div style="height:10px; background:#27aae1;"></div>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a href="#" class="navbar-brand"> JAZEBAKRAM.COM</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapseCMS">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarcollapseCMS">
-      </div>
-    </div>
-  </nav>
-    <div style="height:10px; background:#27aae1;"></div>
+  <?php require_once("navbar.php"); ?>
     <!-- NAVBAR END -->
+    <br>
     <!-- HEADER -->
-    <header class="bg-dark text-white py-3">
+    <!-- <header class="bg-dark text-white py-3">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
     <!-- HEADER END -->
     <!-- Main Area Start -->
     <section class="container py-2 mb-4">
@@ -117,17 +107,7 @@ if (isset($_POST["Submit"])) {
     </section>
     <!-- Main Area End -->
     <!-- FOOTER -->
-    <footer class="bg-dark text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-          <p class="lead text-center">Theme By | Jazeb Akram | <span id="year"></span> &copy; ----All right Reserved.</p>
-          <p class="text-center small"><a style="color: white; text-decoration: none; cursor: pointer;" href="http://jazebakram.com/coupons/" target="_blank"> This site is only used for Study purpose jazebakram.com have all the rights. no one is allow to distribute copies other then <br>&trade; jazebakram.com &trade;  Udemy ; &trade; Skillshare ; &trade; StackSkills</a></p>
-           </div>
-         </div>
-      </div>
-    </footer>
-        <div style="height:10px; background:#27aae1;"></div>
+    <?php require_once("Blog/footer.php"); ?>
     <!-- FOOTER END-->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
