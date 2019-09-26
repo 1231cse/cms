@@ -1,15 +1,14 @@
+<?php require_once("Includes/DB.php"); ?>
+<?php require_once("Includes/Functions.php"); ?>
+<?php require_once("Includes/Sessions.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link href="../mdb/css/mdb.min.css" rel="stylesheet" />
-  <link href="../mdb/css/style.css" rel="stylesheet" /> -->
-  <link rel="stylesheet" href="../Css/Styles.css">
   <title>Blog Page</title>
+  <link rel="stylesheet" href="../Css/Styles.css">  
   <style media="screen">
   .heading{
       font-family: Bitter,Georgia,"Times New Roman",Times,serif;
@@ -56,7 +55,7 @@
                       title, description and button.</p>
                     <ul class="list-inline">
                       <li class="list-inline-item">
-                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/niranjan.int">
                           <i class="fab fa-facebook-f"></i>
                         </a>
                       </li>
@@ -66,7 +65,7 @@
                         </a>
                       </li>
                       <li class="list-inline-item">
-                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/niranjan-chourasia/">
                           <i class="fab fa-linkedin-in"></i>
                         </a>
                       </li>                      
@@ -103,7 +102,7 @@
                       title, description and button.</p>
                     <ul class="list-inline">
                       <li class="list-inline-item">
-                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <a class="social-icon text-xs-center" target="_blank" href="facebook.com/1231mohan">
                           <i class="fab fa-facebook-f"></i>
                         </a>
                       </li>
@@ -113,7 +112,7 @@
                         </a>
                       </li>
                       <li class="list-inline-item">
-                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/Manmohan-Kumar-Yadav/">
                           <i class="fab fa-linkedin-in"></i>
                         </a>
                       </li>
@@ -133,9 +132,9 @@
                 <div class="card">
                   <div class="card-body text-center">
                     <p><img class=" img-fluid"
-                        src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png" alt="card image">
+                        src="../Images/mukesh.jpg" alt="card image">
                     </p>
-                    <h4 class="card-title">Sunlimetech</h4>
+                    <h4 class="card-title">Mukesh</h4>
                     <p class="card-text">This is basic card with image on top, title, description and button.</p>
                     <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-info"></i></a>
                   </div>
@@ -144,7 +143,7 @@
               <div class="backside">
                 <div class="card">
                   <div class="card-body text-center mt-4">
-                    <h4 class="card-title">Sunlimetech</h4>
+                    <h4 class="card-title">Mukesh Suman</h4>
                     <p class="card-text">This is basic card with image on top, title, description and button.This is
                       basic card with image on top, title, description and button.This is basic card with image on top,
                       title, description and button.</p>
@@ -160,7 +159,7 @@
                         </a>
                       </li>
                       <li class="list-inline-item">
-                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <a class="social-icon text-xs-center" target="_blank" href="https://in.linkedin.com/in/mukesh-suman">
                           <i class="fab fa-linkedin-in"></i>
                         </a>
                       </li>                      

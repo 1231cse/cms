@@ -20,23 +20,22 @@
         <li class="nav-item material-tooltip-main" data-toggle="tooltip"  data-placement="top" title="News">
           <a class="nav-link" href="#"><i class="far fa-newspaper"></i></a>
         </li>
-        
-<!-- <button type="button" class="btn btn-secondary material-tooltip-main" data-toggle="tooltip"
-  data-placement="top" title="MD on top">
-  MD on top
-</button> -->
         <li class="nav-item dropdown" data-toggle="tooltip" data-placement="top" title="Blog Category">
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false"><i class="fas fa-blog"></i>
           </a>
           <div class="dropdown-menu dropdown-content selected-dropdown dropdown-secondary"
             aria-labelledby="navbarDropdownMenuLink-555">
-            <a class="dropdown-item" href="#">Technlogy</a>
-            <a class="dropdown-item" href="#">Science</a>
-            <a class="dropdown-item" href="#">Fitness</a>
-            <a class="dropdown-item" href="#">Worlds</a>
-            <a class="dropdown-item" href="#">Politics</a>
-            <a class="dropdown-item" href="#">Sports</a>
+            <?php
+                global $ConnectingDB;
+                $sql = "SELECT * FROM category ORDER BY id desc";
+                $stmt = $ConnectingDB->query($sql);
+                while ($DataRows = $stmt->fetch()) {
+                  $CategoryId = $DataRows["id"];
+                  $CategoryName=$DataRows["title"];
+                 ?>
+                <a class="dropdown-item" href="index.php?category=<?php echo $CategoryName; ?>"> <?php echo $CategoryName; ?> </a>
+               <?php } ?>
           </div>
         </li>
         <li class="nav-item dropdown" data-toggle="tooltip" data-placement="top" title="Entertainment">

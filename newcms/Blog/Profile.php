@@ -19,7 +19,7 @@ if( $Result==1 ){
   }
 }else {
   $_SESSION["ErrorMessage"]="Bad Request !!";
-  Redirect_to("Blog/index.php?page=1");
+  Redirect_to("index.php?page=1");
 }
 
 
@@ -30,14 +30,12 @@ if( $Result==1 ){
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
-  <link rel="stylesheet" href="Css/Styles.css">
   <title>Profile</title>
+  <link rel="stylesheet" href="Css/Styles.css">
 </head>
 <body>
   <!-- NAVBAR -->
-  <?php require_once("Blog/navbar.php"); ?>
+  <?php require_once("navbar.php"); ?>
     <!-- NAVBAR END -->
     <!-- HEADER -->
     <header class="bg-dark text-white py-3">
@@ -71,17 +69,7 @@ if( $Result==1 ){
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-dark text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-          <p class="lead text-center">MUSEN | <span id="year"></span> &copy; ----All right Reserved.</p>
-          <p class="text-center small"><a style="color: white; text-decoration: none; cursor: pointer;" href="http://MUSEN/" target="_blank"> This site is only used for Study purpose MUSEN have all the rights. no one is allow to distribute copies other then <br> MUSEN &trade; </a></p>
-          </div>
-         </div>
-      </div>
-    </footer>
-        <!-- <div style="height:10px; background:#27aae1;"></div> -->
+    <?php require_once("footer.php"); ?>
     <!-- FOOTER END-->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
