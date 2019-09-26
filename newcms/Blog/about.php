@@ -102,7 +102,7 @@
                       title, description and button.</p>
                     <ul class="list-inline">
                       <li class="list-inline-item">
-                        <a class="social-icon text-xs-center" target="_blank" href="facebook.com/1231mohan">
+                        <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/1231mohan">
                           <i class="fab fa-facebook-f"></i>
                         </a>
                       </li>
@@ -112,7 +112,7 @@
                         </a>
                       </li>
                       <li class="list-inline-item">
-                        <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/Manmohan-Kumar-Yadav/">
+                        <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/manmohankumar/">
                           <i class="fab fa-linkedin-in"></i>
                         </a>
                       </li>
